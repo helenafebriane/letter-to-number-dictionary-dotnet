@@ -1,0 +1,14 @@
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\bin\Debug\net9.0\letter-to-number.exe
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\bin\Debug\net9.0\letter-to-number.deps.json
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\bin\Debug\net9.0\letter-to-number.runtimeconfig.json
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\bin\Debug\net9.0\letter-to-number.dll
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\bin\Debug\net9.0\letter-to-number.pdb
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\obj\Debug\net9.0\letter-to-number.GeneratedMSBuildEditorConfig.editorconfig
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\obj\Debug\net9.0\letter-to-number.AssemblyInfoInputs.cache
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\obj\Debug\net9.0\letter-to-number.AssemblyInfo.cs
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\obj\Debug\net9.0\letter-to-number.csproj.CoreCompileInputs.cache
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\obj\Debug\net9.0\letter-to-number.dll
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\obj\Debug\net9.0\refint\letter-to-number.dll
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\obj\Debug\net9.0\letter-to-number.pdb
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\obj\Debug\net9.0\letter-to-number.genruntimeconfig.cache
+D:\Helena\Project\My Project\letter-to-number-dictionary-dotnet\letter-to-number\obj\Debug\net9.0\ref\letter-to-number.dll
