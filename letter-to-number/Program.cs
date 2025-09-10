@@ -45,14 +45,46 @@ class Program
 
     static void Main()
     {
-        Console.WriteLine("Letter to Number Processor (type 'exit' to quit)");
+        ShowHeader();
         while (true)
         {
-            Console.Write("\nEnter a sentence: ");
-            string input = Console.ReadLine();
-            if (input.ToLower() == "exit") break;
-            ProcessText(input);
+            ShowMenu();
+            string choice = Console.ReadLine()?.Trim();
+            if (choice == "1") RunProcessor();
+            else if (choice == "2") ShowDictionary();
+            else if (choice == "0") break;
+            else Console.WriteLine("Invalid option. Try again.");
         }
+    }
+
+    static void ShowHeader()
+    {
+        Console.Clear();
+        Console.WriteLine("===================================");
+        Console.WriteLine("        LETTER TO NUMBER CLI       ");
+        Console.WriteLine("===================================\n");
+    }
+
+    static void ShowMenu()
+    {
+        Console.WriteLine("\nMenu:");
+        Console.WriteLine("1. Process a sentence");
+        Console.WriteLine("2. Show Dictionary");
+        Console.WriteLine("0. Exit");
+        Console.Write("Choose an option: ");
+    }
+
+    static void RunProcessor()
+    {
+        Console.Write("\nEnter a sentence: ");
+        string input = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(input)) { Console.WriteLine("No input provided!"); return; }
+        Console.WriteLine("\nProcessing...\n");
+        ProcessText(input);
+        Console.WriteLine("\nPress any key to return to menu...");
+        Console.ReadKey();
+        Console.Clear();
+        ShowHeader();
     }
 
     static void ProcessText(string input)
@@ -128,5 +160,26 @@ class Program
         var replacement = NumToLetSeq(result).Skip(1).Take(2).ToList();
         var refined = seqLetters.Take(seqLetters.Count - 2).Concat(replacement).ToList();
         return refined;
+    }
+
+    static void ShowDictionary()
+    {
+        Console.Clear();
+        Console.WriteLine("=========== NUM → LETTER ===========");
+        foreach (var kvp in numToLet)
+        {
+            Console.WriteLine($"{kvp.Key} -> {kvp.Value}");
+        }
+
+        Console.WriteLine("\n=========== LETTER → NUM ===========");
+        foreach (var kvp in letToNum)
+        {
+            Console.WriteLine($"{kvp.Key} -> {kvp.Value}");
+        }
+
+        Console.WriteLine("\nPress any key to return to menu...");
+        Console.ReadKey();
+        Console.Clear();
+        ShowHeader();
     }
 }
